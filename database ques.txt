@@ -1,0 +1,8 @@
+**database question solution** :
+SELECT name 
+FROM student
+WHERE exams_name = ( SELECT exams_name 
+		   FROM exam grade
+		   WHERE note = ( SELECT top10function().average grade
+				    FROM AVG grade
+				    ORDER BY average grade)
